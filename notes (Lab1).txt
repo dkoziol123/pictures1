@@ -1,0 +1,69 @@
+Sample Code for Vue: https://github.com/ISQA-Classes/vue-samples/tree/master/intro_to_vue
+(Get PyCharm set back up)
+
+Github ID: dkoziol321
+
+Running Vue apps in Visual Basic is Recomended (VSC is awesome!!)
+Once the HTML files are in a folder they can also be used by double clicking the file
+
+To run Vue directly:: 
+cd /skills-list (| name of directory/
+yarn serve or npm run serve
+
+Download or install the Extensions in VBC
+1. Open in browser by TechER
+2. Vetur vy by Pine Vu
+3. Vue VSCode Snippets by sarah.drasner
+4. Visual Studio IntelliCode by Microsoft
+
+
+The Application Space is the container for your application and provides a canvas for Vue to work in. ==
+<div id='app'>
+  {{ message }}
+</div>
+
+The Vue Application is between the <script></script> of the HTML page. This is where most of the data is referenced and where the logic resides. 
+<script>
+  const app = new Vue {{
+  el: '#app',
+
+___________________________________________________________________________________________________________________________
+
+The common parts of a vue component are:  
+1. Template - This is the container for the HTMLand some Vue Directives.
+2. Script - this is where we put the logic for our application.
+3. Style - no different than any standard web application - this is where the CSS is placed.
+
+
+When you created this project, NPM created a couple of Vue components for us. One is /src/App.vue.  It is the root component for the project. Open this and you will find a common theme for most of the Vue Components as we have seen earlier. 
+
+  data:{
+   message: 'Hello World!!',
+  }
+
+});
+
+</script>
+
+el tell which element of our HTML we want Vue to manipulate
+
+The “data” field receives a javascript object the data that will be manipulated in the context of our application.  
+
+
+
+__________________________________________________________________________________________________________________
+
+Directives are the part of Vue.js that attach special meaning and behavior to plain html elements on the page.  They include:
+v-html,
+v-bind,
+v-if, v-else , v-else-if,
+v-for,
+v-model
+v-show
+v-text
+
+
+The v-html directive allows you to output content without using the mustache-style curly bracket syntax. It can also be used if the output includes HTML Tags.
+You should only use v-html you trust since it could be a security risk! 
+
+https://github.com/ISQA-Classes/vue-samples/blob/master/intro_to_vue/HelloVue_and_computed_values.html
